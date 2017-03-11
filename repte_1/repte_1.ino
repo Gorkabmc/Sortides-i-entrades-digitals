@@ -40,7 +40,7 @@ void loop()
   digitalWrite(10, HIGH);
   digitalWrite(11, HIGH);
   digitalWrite(12, HIGH);
-  delay(1000);
+  delay(300);
   digitalWrite(11, LOW);
   digitalWrite(12, LOW);
   digitalWrite(10, LOW);
@@ -49,7 +49,7 @@ void loop()
   digitalWrite(7, LOW);
   digitalWrite(6, LOW);
   digitalWrite(5, LOW);
-  delay(1000);
+  delay(300);
 }
 
 //******************************* FUNCIONS ****************************************
