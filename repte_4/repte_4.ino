@@ -12,9 +12,12 @@ int LED5 = 5;
 int LED6 = 6;
 int LED7 = 7;
 int LED8 = 8;
+int B;
 //******************************** SETUP ******************************************
 void setup()
 {
+  Serial.begin(9600);
+  Serial.println("Entra numero !");
   pinMode(8, OUTPUT);
   pinMode(7, OUTPUT);
   pinMode(6, OUTPUT);
@@ -24,108 +27,44 @@ void setup()
 //********************************* LOOP ******************************************
 void loop()
 {
-  digitalWrite(5, HIGH);
-  delay(50);
-  digitalWrite(5, LOW);
-  delay(50);
-
-  digitalWrite(6, HIGH);
-  delay(50);
-  digitalWrite(6, LOW);
-  delay(50);
-
-  digitalWrite(7, HIGH);
-  delay(50);
-  digitalWrite(7, LOW);
-  delay(50);
-
-  digitalWrite(8, HIGH);
-  delay(50);
-  digitalWrite(8, LOW);
-  delay(50);
-
-  digitalWrite(9, HIGH);
-  delay(50);
-  digitalWrite(9, LOW);
-  delay(50);
-
-  digitalWrite(10, HIGH);
-  delay(50);
-  digitalWrite(10, LOW);
-  delay(50);
-
-  digitalWrite(11, HIGH);
-  delay(50);
-  digitalWrite(11, LOW);
-  delay(50);
-
-  digitalWrite(12, HIGH);
-  delay(50);
-  digitalWrite(12, LOW);
-  delay(50);
-
-  digitalWrite(11, HIGH);
-  delay(50);
-  digitalWrite(11, LOW);
-  delay(50);
-
-  digitalWrite(10, HIGH);
-  delay(50);
-  digitalWrite(10, LOW);
-  delay(50);
-
-  digitalWrite(9, HIGH);
-  delay(50);
-  digitalWrite(9, LOW);
-  delay(50);
-
-  digitalWrite(8, HIGH);
-  delay(50);
-  digitalWrite(8, LOW);
-  delay(50);
-
-  digitalWrite(7, HIGH);
-  delay(50);
-  digitalWrite(7, LOW);
-  delay(50);
-
-  digitalWrite(6, HIGH);
-  delay(50);
-  digitalWrite(6, LOW);
-  delay(50);
-
-  digitalWrite(5, HIGH);
-  delay(50);
-  digitalWrite(5, LOW);
-  delay(50);
-
-  digitalWrite(8 , HIGH);
-  digitalWrite(9 , HIGH);
-  delay(80);
-  digitalWrite(8 , LOW);
-  digitalWrite(9 , LOW);
-  delay(80);
-
-  digitalWrite(7 , HIGH);
-  digitalWrite(10 , HIGH);
-  delay(80);
-  digitalWrite(7 , LOW);
-    digitalWrite(10 , LOW);
-  delay(80);
-
+  while (Serial.available() > 0) {
+    B = Serial.parseInt();
+    if (Serial.read() == '\n') {
+ if (B == 0)
+ {
+ }
+  else if (B == 1)
+  {
+    digitalWrite(5, HIGH);
+    delay(1000);
+    digitalWrite(5, LOW);
+    delay(1000);
+  }
+    else if (B == 2)
+  {
     digitalWrite(6, HIGH);
-    digitalWrite(11, HIGH);
-  delay(80);
-  digitalWrite(6, LOW);
-    digitalWrite(11, LOW);
-  delay(80);
+    delay(1000);
+    digitalWrite(6, LOW);
+    delay(1000);
+  }
+      else if (B == 3)
+  {
+    digitalWrite(7, HIGH);
+    delay(1000);
+    digitalWrite(7, LOW);
+    delay(1000);
+  }
+      else if (B == 4)
+  {
+    digitalWrite(8, HIGH);
+    delay(1000);
+    digitalWrite(8, LOW);
+    delay(1000);
+  }
+  
+    }
+  }
+    }
+    
 
-  digitalWrite(5, HIGH);
-  digitalWrite(12, HIGH);
-  delay(80);
-  digitalWrite(5, LOW);
-  digitalWrite(12, LOW);
-  delay(80);
-}
-
-//******************************* FUNCIONS ****************************************
+  //******************************* FUNCIONS ****************************************
