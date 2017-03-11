@@ -8,14 +8,14 @@
 //******************************* INCLUDES ****************************************
 
 //******************************* VARIABLES ***************************************
-int LED5 = 5;                         
-int LED6 = 6;                       
-int LED7 = 7;                         
-int LED8 = 8;                         
-int LED9 = 9;                         
-int LED10 = 10;                     
-int LED11 = 11;                       
-int LED12 = 12; 
+int LED5 = 5;
+int LED6 = 6;
+int LED7 = 7;
+int LED8 = 8;
+int LED9 = 9;
+int LED10 = 10;
+int LED11 = 11;
+int LED12 = 12;
 //******************************** SETUP ******************************************
 void setup()
 {
@@ -36,22 +36,40 @@ void loop()
   delay(300);
   digitalWrite(5, LOW);
   delay(300);
-  digitalWrite(6, LOW);
-  digitalWrite(7, HIGH);
-  digitalWrite(8, LOW);
-  digitalWrite(9, HIGH);
-  digitalWrite(10, LOW);
-  digitalWrite(11, HIGH);
-  digitalWrite(12, LOW);
-  delay(300);
-  digitalWrite(12, HIGH);
-  digitalWrite(11, LOW);
-  digitalWrite(10, HIGH);
-  digitalWrite(9, LOW);
-  digitalWrite(8, HIGH);
-  digitalWrite(7, LOW);
+
   digitalWrite(6, HIGH);
-  digitalWrite(5, LOW);
+  delay(300);
+  digitalWrite(6, LOW);
+  delay(300);
+
+  digitalWrite(7, HIGH);
+  delay(300);
+  digitalWrite(7, LOW);
+  delay(300);
+  
+  digitalWrite(8, HIGH);
+  delay(300);
+  digitalWrite(8, LOW);
+  delay(300);
+  
+  digitalWrite(9, HIGH);
+  delay(300);
+  digitalWrite(9, LOW);
+  delay(300);
+  
+  digitalWrite(10, HIGH);
+  delay(300);
+  digitalWrite(10, LOW);
+  delay(300);
+  
+  digitalWrite(11, HIGH);
+  delay(300);
+  digitalWrite(11, LOW);
+  delay(300);
+  
+  digitalWrite(12, HIGH);
+  delay(300);
+  digitalWrite(12, LOW);
   delay(300);
 }
 
