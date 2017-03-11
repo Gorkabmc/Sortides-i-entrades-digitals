@@ -49,9 +49,11 @@ void loop()
       }
       else if (B == 3)
       {
-        digitalWrite(7, HIGH);
+        digitalWrite(5, HIGH);
+        digitalWrite(6, HIGH);
         delay(1000);
-        digitalWrite(7, LOW);
+        digitalWrite(5, LOW);
+        digitalWrite(6, LOW);
         delay(1000);
       }
       else if (B == 4)
