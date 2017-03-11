@@ -33,7 +33,7 @@ void setup()
 void loop()
 {
   digitalWrite(5, HIGH);
-  digitalWrite(6, HIGH);
+  digitalWrite(6, LOW);
   digitalWrite(7, HIGH);
   digitalWrite(8, HIGH);
   digitalWrite(9, HIGH);
@@ -47,7 +47,7 @@ void loop()
   digitalWrite(9, LOW);
   digitalWrite(8, LOW);
   digitalWrite(7, LOW);
-  digitalWrite(6, LOW);
+  digitalWrite(6, HIGH);
   digitalWrite(5, LOW);
   delay(300);
 }
