@@ -107,14 +107,14 @@ void loop()
   digitalWrite(5, LOW);
   delay(50);
 
-  digitalWrite(8 && 9, HIGH);
+  digitalWrite(8 Y 10, HIGH);
   delay(80);
-  digitalWrite(8 && 9, LOW);
+  digitalWrite(8 Y 10, LOW);
   delay(80);
 
-  digitalWrite(7 && 10, HIGH);
+  digitalWrite(7 , HIGH);
   delay(80);
-  digitalWrite(7 && 10, LOW);
+  digitalWrite(7 , LOW);
   delay(80);
 
     digitalWrite(6, HIGH);
