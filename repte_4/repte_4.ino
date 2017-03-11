@@ -99,6 +99,79 @@ void loop()
         digitalWrite(8, LOW);
         delay(1000);
       }
+      else if (B == 9)
+      {
+        digitalWrite(8, HIGH);
+        digitalWrite(5, HIGH);
+        delay(1000);
+        digitalWrite(8, LOW);
+        digitalWrite(5, LOW);
+        delay(1000);
+      }
+      else if (B == 10)
+      {
+        digitalWrite(8, HIGH);
+        digitalWrite(6, HIGH);
+        delay(1000);
+        digitalWrite(8, LOW);
+        digitalWrite(6, LOW);
+        delay(1000);
+      }
+      else if (B == 11)
+      {
+        digitalWrite(8, HIGH);
+        digitalWrite(6, HIGH);
+        digitalWrite(5, HIGH);
+        delay(1000);
+        digitalWrite(8, LOW);
+        digitalWrite(6, LOW);
+        digitalWrite(5, LOW);
+        delay(1000);
+      }
+      else if (B == 12)
+      {
+        digitalWrite(8, HIGH);
+        digitalWrite(7, HIGH);
+        delay(1000);
+        digitalWrite(8, LOW);
+        digitalWrite(7, LOW);
+        delay(1000);
+      }
+      else if (B == 13)
+      {
+        digitalWrite(8, HIGH);
+        digitalWrite(7, HIGH);
+        digitalWrite(5, HIGH);
+        delay(1000);
+        digitalWrite(8, LOW);
+        digitalWrite(7, LOW);
+        digitalWrite(5, LOW);
+        delay(1000);
+      }
+      else if (B == 14)
+      {
+        digitalWrite(8, HIGH);
+        digitalWrite(7, HIGH);
+        digitalWrite(6, HIGH);
+        delay(1000);
+        digitalWrite(8, LOW);
+        digitalWrite(7, LOW);
+        digitalWrite(6, LOW);
+        delay(1000);
+      }
+      else if (B == 15)
+      {
+        digitalWrite(8, HIGH);
+        digitalWrite(7, HIGH);
+        digitalWrite(6, HIGH);
+        digitalWrite(5, HIGH);
+        delay(1000);
+        digitalWrite(8, LOW);
+        digitalWrite(7, LOW);
+        digitalWrite(6, LOW);
+        digitalWrite(5, LOW);
+        delay(1000);
+      }
     }
   }
 }
