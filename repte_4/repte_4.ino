@@ -12,17 +12,9 @@ int LED5 = 5;
 int LED6 = 6;
 int LED7 = 7;
 int LED8 = 8;
-int LED9 = 9;
-int LED10 = 10;
-int LED11 = 11;
-int LED12 = 12;
 //******************************** SETUP ******************************************
 void setup()
 {
-  pinMode(12, OUTPUT);
-  pinMode(11, OUTPUT);
-  pinMode(10, OUTPUT);
-  pinMode(9, OUTPUT);
   pinMode(8, OUTPUT);
   pinMode(7, OUTPUT);
   pinMode(6, OUTPUT);
