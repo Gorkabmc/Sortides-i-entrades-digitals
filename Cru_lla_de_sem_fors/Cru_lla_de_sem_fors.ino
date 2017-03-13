@@ -7,50 +7,63 @@
 
 //******************************* INCLUDES ****************************************
 
-//******************************* VARIABLES ***************************************
-const int ledPin = 13; // ledPin al 13
-int estat1, estat2 = 2;   // 0:Verd, 1:Tronja, 2:Vermell
- 
+//********** Variables ************************************************************
+const int semaforAR = 7;          
+const int semaforAT = 8;          
+const int semaforAV = 9;          
+const int semaforBR = 10;         
+const int semaforBT = 11;         
+const int semaforBV = 12;        
+int pausa = 500;  
 //******************************** SETUP ******************************************
-void setup() {
-  // initialize serial: 
-  Serial.begin(9600);
-  // make the pins outputs:
-  pinMode(ledPin, OUTPUT); 
+void setup()
+{
+  pinMode(semaforAR, OUTPUT); 
+  pinMode(semaforAT, OUTPUT);    
+  pinMode(semaforAV, OUTPUT);    
+  pinMode(semaforBR, OUTPUT);     
+  pinMode(semaforBT, OUTPUT);     
+  pinMode(semaforBV, OUTPUT);     
+  digitalWrite(semaforAR, HIGH);    
+  digitalWrite(semaforAT, LOW);    
+  digitalWrite(semaforAV, LOW);   
+  digitalWrite(semaforBR, HIGH);    
+  digitalWrite(semaforBT, LOW);    
+  digitalWrite(semaforBV, LOW);     
+  
+  delay(pausa);                     
 }
-
 //********************************* LOOP ******************************************
-void loop() {
-  estat1 = 0;
-  estat2 = 2;
-  Serial.write(estat1);
-  Serial.write(estat2);
-  delay(2000);
-  estat1 = 1;
-  estat2 = 2;
-  Serial.write(estat1);
-  Serial.write(estat2);
-  delay(1000);
-  estat1 = 2;
-  estat2 = 2;
-  Serial.write(estat1);
-  Serial.write(estat2);
-  delay(500);
-  estat1 = 2;
-  estat2 = 0;
-  Serial.write(estat1);
-  Serial.write(estat2);
-  delay(2000);
-  estat1 = 2;
-  estat2 = 1;
-  Serial.write(estat1);
-  Serial.write(estat2);
-  delay(1000);
-  estat1 = 2;
-  estat2 = 2;
-  Serial.write(estat1);
-  Serial.write(estat2);
-  delay(500);
+void loop()
+{
+  digitalWrite(semaforBR, LOW);     
+  digitalWrite(semaforBV, HIGH);    
+  
+  delay(6*pausa);                   
+  
+  digitalWrite(semaforBV, LOW);     
+  digitalWrite(semaforBT, HIGH);    
+  
+  delay(pausa);                     
+  
+  digitalWrite(semaforBT, LOW);     
+  digitalWrite(semaforBR, HIGH);    
+   
+  delay(pausa);                     
+  
+  digitalWrite(semaforAR, LOW);     
+  digitalWrite(semaforAV, HIGH);    
+  
+  delay(6*pausa);                   
+  
+  digitalWrite(semaforAV, LOW);    
+  digitalWrite(semaforAT, HIGH);    
+  
+  delay(pausa);                     
+  
+  digitalWrite(semaforAT, LOW);     
+  digitalWrite(semaforAR, HIGH);    
+  
+   delay(pausa);                     
 }
-
 //******************************* FUNCIONS ****************************************
