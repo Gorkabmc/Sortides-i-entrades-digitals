@@ -1,9 +1,56 @@
-void setup() {
-  // put your setup code here, to run once:
+/**********************************************************************************
+**                                                                               **
+**                         Repte 2. Cruïlla de semàfors                          **
+**                                                                               **
+** GORKA FERNÁNDEZ RAMOS                                       13/03/2017        **
+**********************************************************************************/
 
+//******************************* INCLUDES ****************************************
+
+//******************************* VARIABLES ***************************************
+const int ledPin = 13;
+int estat1, estat2 = 2;   
+//******************************** SETUP ******************************************
+void setup()
+{
+
+  Serial.begin(9600);
+   pinMode(ledPin, OUTPUT); 
 }
 
-void loop() {
-  // put your main code here, to run repeatedly:
-
+//********************************* LOOP ******************************************
+  void loop() {
+  estat1 = 0;
+  estat2 = 2;
+  Serial.write(estat1);
+  Serial.write(estat2);
+  delay(2000);
+  estat1 = 1;
+  estat2 = 2;
+  Serial.write(estat1);
+  Serial.write(estat2);
+  delay(1000);
+  estat1 = 2;
+  estat2 = 2;
+  Serial.write(estat1);
+  Serial.write(estat2);
+  delay(500);
+  estat1 = 2;
+  estat2 = 0;
+  Serial.write(estat1);
+  Serial.write(estat2);
+  delay(2000);
+  estat1 = 2;
+  estat2 = 1;
+  Serial.write(estat1);
+  Serial.write(estat2);
+  delay(1000);
+  estat1 = 2;
+  estat2 = 2;
+  Serial.write(estat1);
+  Serial.write(estat2);
+  delay(500);
 }
+}
+
+//******************************* FUNCIONS ****************************************
