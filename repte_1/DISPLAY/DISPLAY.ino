@@ -30,10 +30,10 @@ void setup()
   pinMode(7, OUTPUT);
   pinMode(8, OUTPUT);
   pinMode(9, OUTPUT);
-  writePonto(0);
+  writePUNT(0);
 }
 
-void writePonto(byte dot)
+void writePUNT(byte dot)
 {
   digitalWrite(9, dot);
 }
@@ -47,9 +47,9 @@ void sevenSegWrite(byte digit)
     digitalWrite(pin, seven_seg_digits[digit][segCount]);
     ++pin;
   }
-  writePonto(1);
+  writePUNT(1);
   delay(100);
-  writePonto(0);
+  writePUNT(0);
 }
 //********************************* LOOP ******************************************
 void loop()
