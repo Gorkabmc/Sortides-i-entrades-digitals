@@ -27,9 +27,23 @@ int A = 500;
 void setup()
 {
   pinMode( COL1 , OUTPUT );
-  pinMode( FIL1 , OUTPUT );
+  pinMode( FIL1 , OUTPUT );// 1 fila 1
   pinMode( COL2 , OUTPUT );
-  pinMode( FIL1 , OUTPUT );
+  pinMode( FIL1 , OUTPUT );// 2 fila 1
+  pinMode( COL3 , OUTPUT );
+  pinMode( FIL1 , OUTPUT );// 3 fila 1
+  pinMode( COL4 , OUTPUT );
+  pinMode( FIL1 , OUTPUT );// 4 fila 1
+  pinMode( COL5 , OUTPUT );
+  pinMode( FIL1 , OUTPUT );// 5 fila 1
+  pinMode( COL6 , OUTPUT );
+  pinMode( FIL1 , OUTPUT );// 6 fila 1
+  pinMode( COL7 , OUTPUT );
+  pinMode( FIL1 , OUTPUT );// 7 fila 1
+  pinMode( COL8 , OUTPUT );
+  pinMode( FIL1 , OUTPUT );// 8 fila 1
+  pinMode( COL9 , OUTPUT );
+  pinMode( FIL1 , OUTPUT );// 9 fila 1
 }
 
 //********************************* LOOP ******************************************
@@ -42,7 +56,7 @@ void loop()
   digitalWrite (COL1, LOW);
   digitalWrite (FIL1, LOW);
   delay(A);
-  
+
   // 2 fila 1
   digitalWrite (COL2, HIGH);
   digitalWrite (FIL1, HIGH);
@@ -50,7 +64,7 @@ void loop()
   digitalWrite (COL2, LOW);
   digitalWrite (FIL1, LOW);
   delay(A);
-  
+
   // 3 fila 1
   digitalWrite (COL3, HIGH);
   digitalWrite (FIL1, HIGH);
@@ -58,7 +72,7 @@ void loop()
   digitalWrite (COL3, LOW);
   digitalWrite (FIL1, LOW);
   delay(A);
-  
+
   // 4 fila 1
   digitalWrite (COL4, HIGH);
   digitalWrite (FIL1, HIGH);
@@ -66,37 +80,37 @@ void loop()
   digitalWrite (COL4, LOW);
   digitalWrite (FIL1, LOW);
   delay(A);
-  
+
   // 5 fila 1
-    digitalWrite (COL5, HIGH);
+  digitalWrite (COL5, HIGH);
   digitalWrite (FIL1, HIGH);
   delay(A);
   digitalWrite (COL5, LOW);
   digitalWrite (FIL1, LOW);
   delay(A);
   // 6 fila 1
-    digitalWrite (COL6, HIGH);
+  digitalWrite (COL6, HIGH);
   digitalWrite (FIL1, HIGH);
   delay(A);
   digitalWrite (COL6, LOW);
   digitalWrite (FIL1, LOW);
   delay(A);
   // 7 fila 1
-    digitalWrite (COL7, HIGH);
+  digitalWrite (COL7, HIGH);
   digitalWrite (FIL1, HIGH);
   delay(A);
   digitalWrite (COL7, LOW);
   digitalWrite (FIL1, LOW);
   delay(A);
   // 8 fila 1
-    digitalWrite (COL8, HIGH);
+  digitalWrite (COL8, HIGH);
   digitalWrite (FIL1, HIGH);
   delay(A);
   digitalWrite (COL8, LOW);
   digitalWrite (FIL1, LOW);
   delay(A);
   // 9 fila 1
-    digitalWrite (COL9, HIGH);
+  digitalWrite (COL9, HIGH);
   digitalWrite (FIL1, HIGH);
   delay(A);
   digitalWrite (COL9, LOW);
